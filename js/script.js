@@ -17,11 +17,6 @@ function add_element(id, obj, num) {
 
 function init() {
     upload_info();
-    c1 = document.getElementById('mccml_c1');
-    c2 = document.getElementById('mccml_c2');
-    c3 = document.getElementById('mccml_c3');
-    c4 = document.getElementById('mccml_c4');
-    c5 = document.getElementById('mccml_c5');
     let amount_c = 1;
     let product_am = 0;
     let res;
@@ -29,23 +24,23 @@ function init() {
         for (let j = 0; j < 4; j++) {
             if (amount_c == 1) {
                 res = add_element(`c${amount_c}_${j+1}`, product[product_am], j);
-                c1.appendChild(res);
+                document.getElementById('mccml_c1').appendChild(res);
             }
             else if (amount_c == 2) {
                 res = add_element(`c${amount_c}_${j+1}`, product[product_am], j);
-                c2.appendChild(res);
+                document.getElementById('mccml_c2').appendChild(res);
             }
             else if (amount_c == 3) {
                 res = add_element(`c${amount_c}_${j+1}`, product[product_am], j);
-                c3.appendChild(res);
+                document.getElementById('mccml_c3').appendChild(res);
             }
             else if (amount_c == 4) {
                 res = add_element(`c${amount_c}_${j+1}`, product[product_am], j);
-                c4.appendChild(res);
+                document.getElementById('mccml_c4').appendChild(res);
             }
             else if (amount_c == 5) {
                 res = add_element(`c${amount_c}_${j+1}`, product[product_am], j);
-                c5.appendChild(res);
+                document.getElementById('mccml_c5').appendChild(res);
             }
             product_am++;
         }
